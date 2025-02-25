@@ -12,11 +12,11 @@
       }
       
       const paymentRequest = {
-        countryCode: "US",
-        currencyCode: "USD",
+        countryCode: "SA",
+        currencyCode: "SAR",
         supportedNetworks: ["visa", "masterCard", "amex"],
         merchantCapabilities: ["supports3DS"],
-        total: { label: "Demo Store", amount: "10.00" }
+        total: { label: "ICAP", amount: "10.00" }
       };
       
       const session = new ApplePaySession(3, paymentRequest);
@@ -41,7 +41,7 @@
   </script>
 </head>
 <body>
-  <h1>Apple Pay POC</h1>
+  <h1>Apple Pay POC For Alistithmar Capital</h1>
   <button onclick="startApplePay()">Pay with Apple Pay</button>
 </body>
 </html>
